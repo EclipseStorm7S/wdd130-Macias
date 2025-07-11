@@ -6,6 +6,11 @@
     <title>RefRank</title>
     <link rel="stylesheet" href="styles/style.css">
     <style>
+        #findref {
+            display: grid;
+            padding: 0 5% 5% 5%;
+        }
+
         #refcards {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -13,10 +18,22 @@
             column-gap: 40px;
         }
 
+        #searchbar {
+            justify-self:center;
+            width: 100%;
+            margin:10px;
+        }
+
+        #search {
+            width: 100%;
+        }
+
         .profiles {
+            display: grid;
             grid-template-rows: 1fr 1fr;
             border: 3px solid #0057ff;
             width: 100%;
+            margin:0px
         }
     </style>
 </head>
@@ -30,8 +47,11 @@
         <a href="findref">Find a Referee</a>
         <a href="review">Submit a Review</a>
     </nav>
-    <main>
+        <div id="findref">
         <h1>Find a Referee</h1>
+        <form id="searchbar">
+        <input type="text" id="search" name="search"><br>
+        </form>
         <div id="refcards">
             <div class="profiles">
                 <p>testing testing 123</p>
@@ -46,7 +66,7 @@
                 <p>testing testing 123</p>
             </div>
         </div>
-    </main>
+        </div>
     <footer>
         <a href="">Home</a>
         <a href="findref">Find a Referee</a>
