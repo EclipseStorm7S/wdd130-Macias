@@ -24,17 +24,64 @@
             margin:10px;
         }
 
+        
         #search {
             width: 100%;
         }
-
+        
         .profiles {
             display: grid;
-            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 3fr;
             border: 3px solid #0057ff;
             width: 100%;
             margin:0px
         }
+
+        .profiles h2 {
+            font-family: 'Bebas Neue';
+            text-align: left;
+        }
+
+        .profiles p {
+            text-align: left;
+            margin: 8px 0px 8px 0px;
+        }
+
+        .profiles div {
+            margin: 10px
+        }
+
+        .profiles img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;    /* Fills the space, crops excess */
+            object-position: center;
+        }
+
+        .profiles button {
+            border: 1.5px solid #0057ff;
+            background-color: #0057ff;
+            color: white;
+            width: 100px
+        }
+
+        #navigation_buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 0px 0px 40px;
+        }
+
+        #navigation_buttons button {
+            border: 2px solid #0057ff;
+            background-color: white;
+            color: #0057ff;
+            width: 20px;
+            height: 20px;
+            font-size: 100%;
+            padding: 2px;
+        }
+
     </style>
 </head>
 <body>
@@ -54,18 +101,53 @@
         </form>
         <div id="refcards">
             <div class="profiles">
-                <p>testing testing 123</p>
+                <div>
+                <img src="images/ref1.webp" alt="Ref profile 1">
+                </div>
+                <div>
+                    <h2>Referee Name 1</h2>
+                    <p>Rating: ★★★★☆</p>
+                    <p>Sport(s): Basketball, Soccer</p>
+                    <button type="button">View Profile</button>
+                </div>
             </div>
             <div class="profiles">
-                <p>testing testing 123</p>
+                <div>
+                <img src="images/ref2.webp" alt="Ref profile 2">
+                </div>
+                <div>
+                    <h2>Referee Name 2</h2>
+                    <p>Rating: ★★★☆☆</p>
+                    <p>Sport(s): Football</p>
+                    <button type="button">View Profile</button>
+                </div>
             </div>
             <div class="profiles">
-                <p>testing testing 123</p>
+                <div>
+                <img src="images/ref3.jpg" alt="Ref profile 3">
+                </div>
+                <div>
+                    <h2>Referee Name 3</h2>
+                    <p>Rating: ★★★★★</p>
+                    <p>Sport(s): Volleyball</p>
+                    <button type="button">View Profile</button>
+                </div>
             </div>
             <div class="profiles">
-                <p>testing testing 123</p>
+                <div>
+                <img src="images/ref4.jpg" alt="Ref profile 4">
+                </div>
+                <div>
+                    <h2>Referee Name 4</h2>
+                    <p>Rating: ★★★★☆</p>
+                    <p>Sport(s): Track & Field</p>
+                    <button type="button">View Profile</button>
+                </div>
             </div>
         </div>
+        </div>
+        <div id="navigation_buttons">
+            <button type="button">1</button>
         </div>
     <footer>
         <a href="">Home</a>
